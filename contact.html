@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - CyberKanun</title>
+  <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">⭐ CyberKanun</div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Contact Us</h1>
+    <p>Home / Contact Us</p>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <h2><i>We’re here to help</i></h2>
+
+    <div class="info-box">
+      <h3>Office</h3>
+      <p>Prem Plaza, 252, Opp. Subhash Park, Subhash Nagar, Rohtak, Haryana 124001, India</p>
+    </div>
+
+    <div class="info-box">
+      <h3>Phone</h3>
+      <p>+91 85699 77750</p>
+    </div>
+
+    <div class="info-box">
+      <h3>Email</h3>
+      <p>support@cyberkanun.com</p>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <form id="contactForm">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="subject" placeholder="Subject" required>
+  <textarea name="message" placeholder="Message" rows="6" required></textarea>
+  <button type="submit">SEND MESSAGE</button>
+</form>
+
+  <!-- Newsletter -->
+  <div class="newsletter">
+    <h2><i>Subscribe Our Newsletter</i></h2>
+    <input type="email" placeholder="Email here">
+    <button>SUBMIT</button>
+  </div>
+
+  <div class="about">
+    <h2>About CyberKanun</h2>
+    <p>CyberKanun is India’s leading legal-tech platform, offering expert services in cyber law, data privacy, and IT compliance.</p>
+    <p><b>Our Mission:</b> Making legal access in the digital space simple, secure, and affordable for everyone.</p>
+    <p><b>Our Vision:</b> To digitally empower citizens and businesses across India against cyber threats.</p>
+  </div>
+
+  <div class="footer">
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Services</a> |
+      <a href="BLOG.HTML">Blog</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="career.html">Career</a>|
+    </p>
+    <p>&copy; 2025 CyberKanun – All Rights Reserved</p>
+  </div>
+<script> const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value,
+    };
+
+    const res = await fetch('http://localhost:5000/send-message', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+    alert(result.message);
+    form.reset();
+  });</script>
+</body>
+</html>
+
+</body>
+</html>

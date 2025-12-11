@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberKanun – Expert Attorneys</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  h1, h2, h3 {
+    margin-bottom: 10px;
+    color: #111;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  p.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+
+  .attorneys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .attorney-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .attorney-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .attorney-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .attorney-title {
+    font-size: 1rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+
+  .attorney-info p {
+    margin: 5px 0;
+  }
+
+  .attorney-info .highlight {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .cta {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .cta a {
+    display: inline-block;
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .cta a:hover {
+    background: #0056b3;
+  }
+
+  footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Meet Our Expert Attorneys</h1>
+  <p class="subtitle">Dedicated professionals delivering justice and innovative legal solutions</p>
+
+  <div class="attorneys">
+    <!-- Advocate Gagan -->
+    <div class="attorney-card">
+        <img src="Gagan-DKrTf6Oj.jpg" alt="Advocate Gagan" style="width:300px; border-radius:10px;">
+      
+      <h3 class="attorney-name">Advocate Gagan</h3>
+      <p class="attorney-title">Lead Advocate | Government Panel Advocate</p>
+      <div class="attorney-info">
+        <p>Expert in <span class="highlight">Economic Offences, Cyber Crime & Civil Litigation</span></p>
+        <p>Practicing Across Pan India | Legal Expert at CyberKanun.com</p>
+        <p>Over 100+ cases resolved successfully, including recovery of financial losses and victim compensation.</p>
+        <p>Played a key role in unfreezing numerous bank accounts linked to cyber fraud.</p>
+        <p><span class="highlight">Government Panels:</span> Haryana Agro Industries Corporation, Haryana Power Utilities</p>
+      </div>
+    </div>
+
+    <!-- Advocate Sanya Kaushal -->
+    <div class="attorney-card">
+        <img src="expert-BEN9g3xN.jpg" alt="Advocate Gagan" style="width:300px; border-radius:10px;">
+      <h3 class="attorney-name">Advocate Sanya Kaushal</h3>
+      <p class="attorney-title">Supreme Court Advocate | Criminal & Cyber Law Specialist</p>
+      <div class="attorney-info">
+        <p>Expert in criminal and cyber law, representing clients with precision and dedication Advocate Sanya Kaushal is a Supreme Court lawyer and expert in criminal and cyber law, known for her sharp legal mind, strategic advocacy, and success in high-profile cybercrime and digital fraud cases across Indian courts.Cybercrime expert, Supreme Court advocate, 100+ cases successfully resolved..</p>
+      </div>
+    </div>
+
+    <!-- Advocate Deepanshu Mahajan -->
+    <div class="attorney-card">
+    <img src="Deepanshu-Bm1NVH4A.jpg" alt="Advocate Gagan" style="width:300px; border-radius:10px;">
+      <h3 class="attorney-name">Advocate Deepanshu Mahajan</h3>
+      <p class="attorney-title">High Court Advocate | Data Privacy & IP Expert</p>
+      <div class="attorney-info">
+        <p>5+ years of litigation experience across Delhi courts.</p>
+        <p>Specializes in civil, criminal, and intellectual property law.</p>
+      </div>
+    </div>
+
+    <!-- Advocate Rashi Singhal -->
+    <div class="attorney-card">
+        <img src="RashiSinghal-FGtucJej.jpg" alt="Advocate Gagan" style="width: 250px; border-radius:10px;">
+      <h3 class="attorney-name">Advocate Rashi Singhal</h3>
+      <p class="attorney-title">Corporate Law Specialist | Compliance & Arbitration Expert</p>
+      <div class="attorney-info">
+        <p>7+ years of experience across criminal, civil, matrimonial, and bail matters.</p>
+      </div>
+    </div>
+  </div>
+
+<br>
+<br>
+<!-- Modal -->
+<div id="expertModal" class="modal" aria-hidden="true">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close-btn" id="closeModal" aria-label="Close">&times;</button>
+    <h3 id="modalTitle">Connect with Our Experts</h3>
+    <p>Fill this quick form and our legal team will contact you within 24-48 hours.</p>
+
+    <form action="https://formspree.io/f/yourformid" method="POST" class="modal-form">
+      <label>Full Name *</label>
+      <input name="name" type="text" required>
+
+      <label>Contact Number *</label>
+      <input name="contact" type="tel" required>
+
+      <label>E-mail ID *</label>
+      <input name="email" type="email" required>
+
+      <label>Brief message / Query</label>
+      <textarea name="message" rows="3"></textarea>
+
+      <div class="modal-actions">
+        <button type="submit" class="submit-btn">Send Request</button>
+        <button type="button" class="secondary-btn" id="closeModal2">Cancel</button>
+      </div>
+    </form>
+
+    <hr>
+    <div class="modal-experts">
+      <h4>Or choose an expert</h4>
+      <ul>
+        <li><strong>Advocate Gagan</strong><br><small>Economic Offences • Cyber Crime</small></li>
+        <li><strong>Advocate Sanya Kaushal</strong><br><small>Criminal & Cyber Law • Supreme Court</small></li>
+        <li><strong>Advocate Deepanshu Mahajan</strong><br><small>Data Privacy & IP</small></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Basic styles - tweak to match your site theme */
+.cta-btn{
+  background:#007bff;color:#fff;padding:12px 20px;border-radius:8px;border:0;cursor:pointer;font-weight:600;
+}
+
+.modal{
+  position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);z-index:9999;
+}
+.modal[aria-hidden="false"]{display:flex;}
+.modal-content{
+  background:#fff;width:95%;max-width:600px;padding:22px;border-radius:12px;position:relative;box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+.close-btn{position:absolute;right:14px;top:10px;font-size:26px;background:none;border:0;cursor:pointer;}
+.modal-form label{display:block;margin-top:12px;font-weight:600;}
+.modal-form input,.modal-form textarea{width:100%;padding:10px;margin-top:6px;border:1px solid #ddd;border-radius:8px;}
+.modal-actions{display:flex;gap:10px;margin-top:14px;}
+.submit-btn{background:#007bff;color:#fff;padding:10px 16px;border-radius:8px;border:0;cursor:pointer;}
+.secondary-btn{background:#f0f0f0;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;}
+.modal-experts ul{list-style:none;padding:0;margin:8px 0 0 0;}
+.modal-experts li{padding:8px 0;border-bottom:1px dashed #eee;}
+@media (max-width:500px){ .modal-content{padding:16px;} }
+</style>
+
+<script>
+const open = document.getElementById('openModal');
+const modal = document.getElementById('expertModal');
+const close1 = document.getElementById('closeModal');
+const close2 = document.getElementById('closeModal2');
+
+function showModal(){ modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+function hideModal(){ modal.setAttribute('aria-hidden','true'); document.body.style.overflow='auto'; }
+
+open.addEventListener('click', showModal);
+close1.addEventListener('click', hideModal);
+if(close2) close2.addEventListener('click', hideModal);
+
+// close on outside click
+modal.addEventListener('click', e => { if(e.target === modal) hideModal(); });
+
+// close on Esc
+document.addEventListener('keydown', e => { if(e.key === 'Escape') hideModal(); });
+</script>
+
+<!-- Trigger button -->
+<button id="openPanel" class="cta-btn">Connect with Our Experts</button>
+
+<!-- Slide panel -->
+<aside id="slidePanel" class="slide-panel" aria-hidden="true">
+  <div class="panel-head">
+    <h3>Connect with Our Experts</h3>
+    <button id="closePanel" class="close-panel" aria-label="Close">✕</button>
+  </div>
+
+  <div class="panel-body">
+    <div class="panel-left">
+      <h4>Featured Experts</h4>
+      <div class="expert-card">
+        <strong>Advocate Gagan</strong>
+        <p>Economic Offences • Cyber Crime</p>
+      </div>
+      <div class="expert-card">
+        <strong>Advocate Sanya Kaushal</strong>
+        <p>Criminal & Cyber Law</p>
+      </div>
+      <div class="expert-card">
+        <strong>Advocate Rashi Singhal</strong>
+        <p>Corporate & Arbitration</p>
+      </div>
+    </div>
+
+    <div class="panel-right">
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <label>Full Name *</label><input name="name" required>
+        <label>Contact Number *</label><input name="contact" required>
+        <label>E-mail *</label><input name="email" type="email" required>
+        <label>Choose expert (optional)</label>
+        <select name="preferred_expert">
+          <option value="">No preference</option>
+          <option>Advocate Gagan</option>
+          <option>Advocate Sanya Kaushal</option>
+          <option>Advocate Deepanshu Mahajan</option>
+        </select>
+        <label>Message</label><textarea name="message" rows="4"></textarea>
+        <button type="submit" class="submit-btn">Request Callback</button>
+      </form>
+    </div>
+  </div>
+</aside>
+
+<style>
+.slide-panel{ position:fixed; right:0; top:0; height:100%; width:0; overflow:hidden; background:#fff; box-shadow:-10px 0 30px rgba(0,0,0,0.15); z-index:9998; transition:width .35s ease; }
+.slide-panel[aria-hidden="false"]{ width:92%; max-width:1000px; }
+.panel-head{ display:flex; align-items:center; justify-content:space-between; padding:18px; border-bottom:1px solid #eee; }
+.close-panel{ background:none;border:0;font-size:20px;cursor:pointer; }
+.panel-body{ display:flex; gap:18px; padding:18px; height:calc(100% - 72px); overflow:auto; }
+.panel-left{ width:40%; min-width:220px; border-right:1px solid #f2f2f2; padding-right:12px; }
+.panel-right{ flex:1; padding-left:12px; }
+.expert-card{ padding:10px 6px; border-radius:8px; background:#fafafa; margin-bottom:10px; }
+.panel-right form label{ display:block; margin-top:10px; font-weight:600; }
+.panel-right input, .panel-right textarea, .panel-right select{ width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; margin-top:6px; }
+@media (max-width:700px){ .panel-body{ flex-direction:column; } .panel-left{ width:100%; border-right:none; } }
+</style>
+
+
+<script>
+const openPanel = document.getElementById('openPanel');
+const slidePanel = document.getElementById('slidePanel');
+const closePanel = document.getElementById('closePanel');
+
+openPanel.addEventListener('click', ()=>{ slidePanel.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; });
+closePanel.addEventListener('click', ()=>{ slidePanel.setAttribute('aria-hidden','true'); document.body.style.overflow='auto'; });
+
+// close with Esc
+document.addEventListener('keydown', e => { if(e.key === 'Escape') { slidePanel.setAttribute('aria-hidden','true'); document.body.style.overflow='auto'; }});
+</script>
+
+  </div>
+</div>
+
+<footer>
+  <p>Prem Plaza, 252, Subhash Park, Subhash Nagar, Rohtak, Haryana 124001, India | Call +91 85699 77750 | Email: <a href="mailto:support@cyberkanun.com">support@cyberkanun.com</a></p>
+  <p>
+    <a href="index.html">Home</a> | 
+    <a href="about.html">About</a> | 
+    <a href="services.html">Services</a> | 
+    <a href="BLOG.HTML">Blog</a> | 
+    <a href="contact.html">Contact</a> | 
+    <a href="career.html">Career</a>
+  </p>
+  <p>© 2025 CyberKanun – A Product of Innovize Tech Solutions Pvt. Ltd. All Rights Reserved</p>
+</footer>
+</body>
+</html>

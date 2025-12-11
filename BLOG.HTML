@@ -1,0 +1,152 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberKanun - Blog</title>
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body> 
+
+  <!-- ===== HEADER ===== -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="CK golden Logo (1).png" alt="Cyber Kanun Logo">
+      <h1>Cyber Kanun</h1>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="btn">Get Appointment</a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Sidebar for Mobile -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="back-btn" id="closeSidebar">Back</button></li>
+    </ul>
+  </div>
+
+  <!-- ===== BLOG BANNER ===== -->
+  <section class="blog-banner">
+    <h1>📚 Latest Blogs</h1>
+    <p>Stay updated with the latest insights on cyber law, data privacy, and digital rights</p>
+  </section>
+
+  <!-- ===== SEARCH SECTION ===== -->
+  <div class="search-section">
+    <input type="text" placeholder="Search blogs...">
+    <select>
+      <option>All Categories</option>
+      <option>Cyber Law</option>
+      <option>Data Privacy</option>
+      <option>Digital Rights</option>
+    </select>
+  </div>
+
+  <!-- ===== BLOG CARDS ===== -->
+  <section class="blog-container">
+    <div class="blog-card">
+      <img src="Vadodara-Municipal-Corporation-22.jpg" alt="Cyber Law">
+      <div class="content">
+        <h3>Understanding Cyber Laws in India</h3>
+        <p>Explore the key aspects of cyber laws and how they impact individuals and businesses...</p>
+        <a href="blog1.html" class="read-more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="Image.jpg" alt="Data Privacy">
+      <div class="content">
+        <h3>Data Privacy in the Digital Age</h3>
+        <p>Learn why data privacy matters and steps to protect your personal information...</p>
+        <a href="blog2.html" class="read-more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="legal-advice-digital-technology-business-600w-2254624529jpg.webp" alt="Digital Rights">
+      <div class="content">
+        <h3>Digital Rights Awareness</h3>
+        <p>Know your rights in the online world and how to exercise them effectively...</p>
+        <a href="blog3.html" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <h2>📩 Subscribe to Our Newsletter</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About CyberKanun</h3>
+        <p>CyberKanun is India’s leading legal-tech platform, offering expert services in cyber law, data privacy, and IT compliance.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="BLOG.HTML">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="career.html">Career</a>
+      </div>
+      <div class="footer-contact">
+        <h3>Get in Touch</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Prem Plaza, Rohtak, Haryana</p>
+        <p><i class="fa-solid fa-phone"></i> +91 85699 77750</p>
+        <p><i class="fa-solid fa-envelope"></i> support@cyberkanun.com</p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 CyberKanun – A Product of Innovize Tech Solutions Pvt. Ltd. All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const sidebar = document.getElementById("sidebar");
+    const closeSidebar = document.getElementById("closeSidebar");
+
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+
+    closeSidebar.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+      hamburger.classList.remove("active");
+    });
+  </script>
+</body>
+</html>

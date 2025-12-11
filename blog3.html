@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Rights Awareness | CyberKanun</title>
+  <link rel="stylesheet" href="blog-detail.css">
+</head>
+<body>
+    <style>/* ==============================
+   General Reset
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ==============================
+   Navbar
+============================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  padding: 15px 40px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+  color: #ffb200;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
+  color: #ffb200;
+}
+
+/* ==============================
+   Blog Detail Section
+============================== */
+.blog-detail {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  overflow: hidden;
+}
+
+.blog-detail img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.blog-detail h1 {
+  color: #111;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.blog-detail .meta {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.blog-detail h2 {
+  color: #222;
+  font-size: 1.4rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-left: 4px solid #ffb200;
+  padding-left: 10px;
+}
+
+.blog-detail p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.blog-detail ul {
+  margin: 10px 0 20px 25px;
+}
+
+.blog-detail ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* ==============================
+   Conclusion Box
+============================== */
+.conclusion {
+  background: #fffbec;
+  border-left: 4px solid #ffb200;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.conclusion h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   Back Link & Footer
+============================== */
+.back-link {
+  margin-top: 25px;
+}
+
+.back-link a {
+  color: #ffb200;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0a0a;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* ==============================
+   Responsive Design
+============================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .nav-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-detail {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .blog-detail h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-detail h2 {
+    font-size: 1.2rem;
+  }
+}
+</style>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="CyberKanun Logo">
+      <h1>CyberKanun</h1>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blogs.html" class="active">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="blog-detail">
+    <img src="images/digital-rights.jpg" alt="Digital Rights Awareness">
+
+    <h1>Digital Rights Awareness</h1>
+    <p class="meta">Published on November 4, 2025 | By CyberKanun Team</p>
+
+    <p>
+      In today’s hyperconnected world, our daily lives revolve around the internet. 
+      From social media interactions to online banking, education, and entertainment—our 
+      personal data and digital identity are constantly at play. However, not many people 
+      truly understand their **digital rights** — the rights that protect your freedom, 
+      privacy, and safety online.
+    </p>
+
+    <h2>What Are Digital Rights?</h2>
+    <p>
+      Digital rights are the fundamental human rights that allow individuals to access, 
+      use, create, and publish digital content safely and freely. These include:
+    </p>
+
+    <ul>
+      <li><strong>Right to Privacy:</strong> Protection of personal data and online communications.</li>
+      <li><strong>Right to Freedom of Expression:</strong> Sharing opinions online without censorship.</li>
+      <li><strong>Right to Access Information:</strong> Equal access to the internet and online resources.</li>
+      <li><strong>Right to Security:</strong> Protection from cyber threats, data theft, and surveillance.</li>
+    </ul>
+
+    <h2>Why Is Digital Rights Awareness Important?</h2>
+    <p>
+      Many internet users unknowingly share sensitive information online. Without awareness, 
+      individuals become vulnerable to misuse of data, cyberbullying, online fraud, and 
+      identity theft. Understanding digital rights helps users stay informed and safe.
+    </p>
+
+    <p>
+      Awareness also empowers citizens to hold institutions accountable for data misuse 
+      and to support policies that promote online safety and transparency.
+    </p>
+
+    <h2>Key Indian Laws Protecting Digital Rights</h2>
+    <ul>
+      <li><strong>Information Technology (IT) Act, 2000:</strong> Provides the legal framework for cybercrimes and data protection.</li>
+      <li><strong>Digital Personal Data Protection (DPDP) Act, 2023:</strong> Safeguards personal data and ensures user consent.</li>
+      <li><strong>Indian Penal Code (IPC):</strong> Includes provisions for online defamation, fraud, and harassment.</li>
+    </ul>
+
+    <h2>How to Protect Your Digital Rights</h2>
+    <ul>
+      <li>Use strong passwords and enable two-factor authentication.</li>
+      <li>Be careful while sharing personal data online.</li>
+      <li>Review app permissions and privacy policies regularly.</li>
+      <li>Report cybercrimes to the official government cyber portal: 
+        <a href="https://cybercrime.gov.in" target="_blank">cybercrime.gov.in</a>
+      </li>
+    </ul>
+
+    <div class="conclusion">
+      <h3>Conclusion</h3>
+      <p>
+        Digital rights are not just legal protections — they are essential to living freely 
+        and securely in the digital age. By understanding and practicing your online rights, 
+        you not only protect yourself but also contribute to building a safer and more 
+        responsible digital society.
+      </p>
+    </div>
+
+    <div class="back-link">
+      <a href="blogs.html">← Back to All Blog

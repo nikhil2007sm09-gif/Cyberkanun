@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Privacy in the Digital Age — CyberKanun</title>
+  <meta name="description" content="Learn about data privacy: why it matters, simple steps to protect your data, the legal landscape in India, and corporate responsibilities." />
+</head>
+<body>
+    <style>
+        /* ===== GENERAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.7;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 12px 40px;
+  border-bottom: 1px solid #222;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar .logo img {
+  height: 55px;
+}
+
+.navbar .logo h1 {
+  color: #ffd700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffd700;
+}
+
+/* ===== BLOG DETAIL ===== */
+.blog-detail {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.blog-detail img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.blog-detail h1 {
+  font-size: 2.2rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.blog-detail .meta {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.blog-detail p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  color: #e8e8e8;
+}
+
+.blog-detail h2 {
+  color: #ffd700;
+  margin: 30px 0 10px;
+  font-size: 1.5rem;
+}
+
+.blog-detail ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-detail ul li {
+  list-style-type: "🔹 ";
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+/* ===== CONCLUSION BOX ===== */
+.conclusion {
+  background: #1a1a1a;
+  border-left: 4px solid #ffd700;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+.conclusion h3 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.back-link a {
+  color: #ffd700;
+  text-decoration: none;
+  border: 1px solid #ffd700;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+  background-color: #ffd700;
+  color: #111;
+}
+
+/* ===== RELATED POSTS ===== */
+.blog-detail section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-detail section ul li {
+  margin-bottom: 10px;
+}
+
+.blog-detail section ul li a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.blog-detail section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #222;
+  background: #111;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .blog-detail img {
+    height: 250px;
+  }
+
+  .blog-detail h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-detail h2 {
+    font-size: 1.3rem;
+  }
+}
+
+    </style>
+
+  <!-- NAVBAR (reuse same markup/site navbar) -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="CK golden Logo (1).png" alt="Cyber Kanun Logo" />
+      <h1>Cyber Kanun</h1>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BLOG DETAIL -->
+  <article class="blog-detail">
+    <img src="Image.jpg" alt="Data Privacy" />
+
+    <h1>Data Privacy in the Digital Age</h1>
+
+    <div class="meta">
+      <span>By <strong>CyberKanun</strong></span> ·
+      <span>Oct 15, 2025</span> ·
+      <span>Reading time: 6 min</span>
+    </div>
+
+    <p>
+      We live in a world where your phone, apps and smart devices quietly collect a lot more
+      about you than you might think. Data privacy is no longer optional — it's essential.
+      This article explains why privacy matters, how personal data is collected, simple steps
+      you can take to protect yourself, and what business & law must do to keep data safe.
+    </p>
+
+    <h2>Why Data Privacy Matters</h2>
+    <p>
+      Personal data fuels products and services — but it also makes people vulnerable when misused.
+      Identity theft, targeted scams, unwanted profiling and reputational harm are just a few risks.
+      Protecting privacy preserves autonomy, dignity and safety in the digital world.
+    </p>
+
+    <h2>How Personal Data Is Collected</h2>
+    <ul>
+      <li><strong>Direct inputs:</strong> forms, registrations, messages.</li>
+      <li><strong>Device signals:</strong> location, device identifiers, sensors.</li>
+      <li><strong>Behavioral data:</strong> browsing, purchases, app usage.</li>
+      <li><strong>Third-party sharing:</strong> ad networks, analytics services, data brokers.</li>
+    </ul>
+
+    <h2>Practical Steps You Can Take Today</h2>
+    <p>Follow these practical, non-technical steps to immediately improve your privacy:</p>
+    <ul>
+      <li><strong>Review app permissions:</strong> remove access to camera, mic and location when not required.</li>
+      <li><strong>Use strong unique passwords:</strong> and enable multi-factor authentication (MFA).</li>
+      <li><strong>Limit data sharing:</strong> avoid signing up with social logins unless necessary.</li>
+      <li><strong>Keep software updated:</strong> security patches fix privacy risks.</li>
+      <li><strong>Use privacy-friendly tools:</strong> privacy browsers, ad-blockers, encrypted messaging apps.</li>
+      <li><strong>Be cautious with public Wi-Fi:</strong> use a trusted VPN for sensitive tasks.</li>
+    </ul>
+
+    <h2>Legal Landscape in India (Short Overview)</h2>
+    <p>
+      India is evolving its data protection framework. While the Personal Data Protection Bill has
+      undergone multiple iterations, existing laws (IT Act & rules, sector-specific regulations)
+      already impose obligations on companies handling sensitive data. Organizations must follow
+      reasonableness principles, maintain consent records and adopt security practices.
+    </p>
+
+    <h2>What Companies Must Do</h2>
+    <ul>
+      <li><strong>Privacy by design:</strong> build products with data minimization and security in mind.</li>
+      <li><strong>Clear notice & consent:</strong> explain why data is collected and how it's used.</li>
+      <li><strong>Data governance:</strong> classify, retain and securely delete data as needed.</li>
+      <li><strong>Incident readiness:</strong> prepare detection and response plans for breaches.</li>
+    </ul>
+
+    <h2>Common Myths About Privacy</h2>
+    <p>
+      <strong>Myth:</strong> “I have nothing to hide.” — <em>Reality:</em> Privacy is about control and dignity,
+      not guilt. Data about anyone can be weaponized or sold without consent.<br>
+      <strong>Myth:</strong> “Deleting an account removes my data.” — <em>Reality:</em> Data can persist in backups
+      or third-party services; ask providers about retention policies.
+    </p>
+
+    <div class="conclusion">
+      <h3>Conclusion: Small steps, big difference</h3>
+      <p>
+        Data privacy doesn't require extreme measures. Regularly trimming app permissions, using MFA,
+        updating your devices and preferring privacy-focused services will dramatically reduce your risk.
+        For businesses, ethical handling of data is now a trust requirement — not an optional extra.
+      </p>
+    </div>
+
+    <div class="back-link">
+      <a href="blog.html">← Back to Blog</a>
+    </div>
+
+    <!-- Related posts -->
+    <section style="margin-top:28px;">
+      <h2>Related Posts</h2>
+      <ul>
+        <li><a href="understanding-cyber-laws.html">Understanding Cyber Laws in India</a></li>
+        <li><a href="digital-rights-awareness.html">Digital Rights Awareness</a></li>
+      </ul>
+    </section>
+  </article>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 CyberKanun — A Product of Innovize Tech Solutions Pvt. Ltd.</p>
+  </footer>
+
+</body>
+</html>

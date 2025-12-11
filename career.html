@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberKanun — Advocate Signup</title>
+    <link rel="stylesheet" href="career.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <img src="CK golden Logo (1).png" class="Logo" alt="Cyber Kanun Logo" />
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR (MOBILE MENU) ===== -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><hr style="border-color:#333"></li>
+      <li><a href="#">Back</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== MAIN FORM ===== -->
+  <main class="container">
+    <h1>Advocate Registration</h1>
+    <p class="lead">Fill this form to join CyberKanun. All fields marked * are required.</p>
+
+    <form id="advocateForm" action="https://formspree.io/f/your-endpoint" method="POST" novalidate>
+      <label for="fullName">1. Full Name of Advocate *</label>
+      <input id="fullName" name="fullName" type="text" required />
+
+      <label for="contactNumber">2. Contact Number *</label>
+      <input id="contactNumber" name="contactNumber" type="tel" pattern="^[0-9+()\\-\\s]{7,20}$" required />
+
+      <label for="email">3. E-Mail ID *</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="graduationYear">4. Year of Graduation (Pass Out Year)</label>
+      <input id="graduationYear" name="graduationYear" type="number" min="1950" max="2035" />
+
+      <label for="experience">5. Total Years of Work Experience *</label>
+      <input id="experience" name="experience" type="number" min="0" max="60" required />
+
+      <fieldset>
+        <legend>6. Are you currently employed? *</legend>
+        <label><input type="radio" name="currentlyEmployed" value="Yes" required> Yes</label>
+        <label><input type="radio" name="currentlyEmployed" value="No"> No</label>
+      </fieldset>
+
+      <label for="location">7. Current Location (City & State)</label>
+      <input id="location" name="location" type="text" />
+
+      <label for="timeCommitment">8. How much time can you devote to Cyber Kanun?</label>
+      <select id="timeCommitment" name="timeCommitment">
+        <option value="">Select</option>
+        <option value="1-5 hours/week">1-5 hours/week</option>
+        <option value="5-10 hours/week">5-10 hours/week</option>
+        <option value="10-20 hours/week">10-20 hours/week</option>
+        <option value="Full-time">Full-time</option>
+      </select>
+
+      <label for="barNumber">9. Bar Council Registration Number *</label>
+      <input id="barNumber" name="barNumber" type="text" required />
+
+      <fieldset>
+        <legend>10. Comfortable with field visits? *</legend>
+        <label><input type="radio" name="fieldVisits" value="Yes" required> Yes</label>
+        <label><input type="radio" name="fieldVisits" value="No"> No</label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+
+      <div id="formMessage" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    // Optional: Auto close sidebar on link click
+    document.querySelectorAll('.sidebar a').forEach(link => {
+      link.addEventListener('click', () => sidebar.classList.remove('active'));
+    });
+  </script>
+  <script>
+document.getElementById("advocateForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = Object.fromEntries(new FormData(this));
+
+    const response = await fetch("http://localhost:5000/api/advocate/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+    document.getElementById("formMessage").innerText = result.message;
+});
+</script>
+
+</body>
+</html>

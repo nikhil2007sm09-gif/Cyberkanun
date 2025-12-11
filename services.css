@@ -1,0 +1,220 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .Logo {
+  height: 50px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b08d57;
+}
+
+/* ===== HAMBURGER (Mobile) ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #111;
+  color: #fff;
+  transition: 0.3s;
+  z-index: 999;
+  padding-top: 80px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: #b08d57;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: #fff;
+}
+
+/* ===== MAIN FORM CONTAINER ===== */
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 40px 50px;
+  border-top: 6px solid #b08d57;
+}
+
+.container h1 {
+  text-align: center;
+  color: #111;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.container .lead {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #b08d57;
+  outline: none;
+  box-shadow: 0 0 5px rgba(176, 141, 87, 0.5);
+}
+
+/* ===== FIELDSET ===== */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #111;
+}
+
+/* ===== FORM BUTTONS ===== */
+.form-actions {
+  margin-top: 25px;
+  text-align: center;
+}
+
+button {
+  padding: 12px 30px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #b08d57;
+  color: #000;
+}
+
+button.secondary {
+  background: #777;
+  margin-left: 10px;
+}
+
+button.secondary:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* ===== FORM MESSAGE ===== */
+#formMessage {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .container {
+    padding: 30px 25px;
+    margin: 40px 15px;
+  }
+}

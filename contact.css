@@ -1,0 +1,182 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: #b08d57;
+  color: #000;
+  text-align: center;
+  padding: 70px 20px;
+}
+.hero h1 {
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 16px;
+  color: #111;
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #111;
+}
+.info-box {
+  background: #111;
+  color: #fff;
+  padding: 25px;
+  margin: 20px auto;
+  border: 1px solid #b08d57;
+  max-width: 550px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.info-box:hover {
+  transform: translateY(-4px);
+  border-color: #fff;
+}
+.info-box h3 {
+  margin: 0;
+  font-style: italic;
+  color: #b08d57;
+  margin-bottom: 8px;
+}
+
+/* ===== CONTACT FORM ===== */
+.form-container,
+#contactForm {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #333;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.2s ease;
+}
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border: 1px solid #b08d57;
+}
+#contactForm button {
+  background: #111;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+#contactForm button:hover {
+  background: #b08d57;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+  background: #b08d57;
+  padding: 50px 20px;
+  text-align: center;
+}
+.newsletter h2 {
+  font-style: italic;
+  color: #111;
+  margin-bottom: 20px;
+}
+.newsletter input {
+  padding: 12px;
+  width: 260px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.newsletter button {
+  padding: 12px 25px;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.newsletter button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  background: #111;
+  color: #b08d57;
+  padding: 60px 20px;
+  text-align: center;
+}
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.about p {
+  color: #fff;
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 35px 20px;
+  font-size: 14px;
+}
+.footer a {
+  color: #b08d57;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: #fff;
+}
